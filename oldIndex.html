@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="nc-doc sidebar-ignore-right sidebar-ignore-left ignore-top-bar ignore-bottom-bar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Editor - tailordom</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="api/dataaccess.js"></script>
+    <script src="api/generateAsset.js"></script>
+    
+</head>
+<body data-editor-theme="design">
+    <div class="content-write">
+        <!-- <div id="nc-workspace">
+            <div class="nc-workspace-wrapper">
+                <div class="media media-main">
+                    <div class="web-canvas-area">
+                        <div class="nc-tools">
+                            <div class="--style-nc-tool td__style-tool">
+                            </div>
+                            <div class="canvas-side-handler">
+                                <div class="handler handle-right">
+                                    <div class="handle-bar"></div>
+                                    <div class="grip-handle"></div>
+                                </div>
+                                <div class="handler handle-left">
+                                    <div class="handle-bar"></div>
+                                    <div class="grip-handle"></div>
+                                </div>
+                            </div>
+                            <div class="media-screen-label">
+                                <div><span>Affects 99px and below</span></div>
+                                <div><span>Laptop</span></div>
+                            </div>
+                        </div>
+                        <div class="page-ifram-wrapper">
+                            <div style="overflow: hidden;">
+                                <iframe id="site-iframe-next"
+                                class="" style="width: 100%; height: calc(100vh - 85px); transform-origin: 0px 0px; display: inline; min-height: 100%; max-height: 100%; border: 0px; position: relative; overflow: hidden; transform-style: preserve-3d; transform: scale(1); pointer-events: auto;"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="dev-area"></div> -->
+        <!-- <div class="nc-4768932-builder"> -->
+            <!-- <div class="topBar">
+                <div class="topBar-main">
+                    <div class="topBar-main-group topBar-group-left">
+                        <div class="nc-design-logo-button">
+                            <div class="nc-logoIcon">
+                                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1146_17402)">
+                                    <path d="M7.94552 1.15225L1.8986 0.531113C1.00344 0.43977 0.327496 1.2984 0.619794 2.13875L4.01776 12.1682L11.9646 12.9903L7.94552 1.15225Z" fill="#D0D5DD"/>
+                                    <path d="M15.9644 1.15314L23.9113 0.331055L19.8922 12.1691L11.9453 12.9912L15.9644 1.15314Z" fill="#D0D5DD"/>
+                                    <path d="M15.9644 24.8293L22.0113 25.4504C22.9065 25.5418 23.5824 24.6831 23.2901 23.8428L19.8922 13.8133L11.9453 12.9912L15.9644 24.8293Z" fill="#D0D5DD"/>
+                                    <path d="M7.94686 24.8293L0 25.6697L4.00083 13.8133L11.9477 12.9912L7.94686 24.8293Z" fill="#D0D5DD"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1146_17402">
+                                    <rect width="23.9137" height="25.3386" fill="white" transform="translate(0 0.331055)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="page-menu" data-automation-id="page-menu">
+                            <div class="page-menu-wrapper">
+                                <span class="page-menu-label">page:</span>
+                                <span class="page-menu-contentList">Home</span>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_1146_17411" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                                    <rect x="0.913696" width="24" height="24" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_1146_17411)">
+                                    <path d="M12.9137 15.0502L7.26367 9.3752L8.31367 8.3252L12.9137 12.9252L17.5137 8.3252L18.5637 9.3752L12.9137 15.0502Z" fill="white"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topBar-main-group topBar-group-middle">
+                        <div class="topBar-group-middle-container">
+                            <div class="media-screen-viewport">
+                                <div class="media-screen-viewport-mobile nc-screen-mobile">
+                                    <svg width="30" height="31" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_1146_17417" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                                        <rect x="0.913696" width="24" height="24" fill="#D9D9D9"/>
+                                        </mask>
+                                        <g mask="url(#mask0_1146_17417)">
+                                        <path d="M8.2137 22.5C7.7137 22.5 7.2887 22.325 6.9387 21.975C6.5887 21.625 6.4137 21.2 6.4137 20.7V3.3C6.4137 2.8 6.5887 2.375 6.9387 2.025C7.2887 1.675 7.7137 1.5 8.2137 1.5H17.6137C18.1137 1.5 18.5387 1.675 18.8887 2.025C19.2387 2.375 19.4137 2.8 19.4137 3.3V20.7C19.4137 21.2 19.2387 21.625 18.8887 21.975C18.5387 22.325 18.1137 22.5 17.6137 22.5H8.2137ZM7.9137 17.775V20.7C7.9137 20.7667 7.94703 20.8333 8.0137 20.9C8.08036 20.9667 8.14703 21 8.2137 21H17.6137C17.6804 21 17.747 20.9667 17.8137 20.9C17.8804 20.8333 17.9137 20.7667 17.9137 20.7V17.775H7.9137ZM12.9137 20.275C13.1637 20.275 13.372 20.1873 13.5387 20.012C13.7054 19.8373 13.7887 19.625 13.7887 19.375C13.7887 19.1417 13.7054 18.9373 13.5387 18.762C13.372 18.5873 13.1637 18.5 12.9137 18.5C12.6637 18.5 12.4554 18.5873 12.2887 18.762C12.122 18.9373 12.0387 19.1417 12.0387 19.375C12.0387 19.625 12.122 19.8373 12.2887 20.012C12.4554 20.1873 12.6637 20.275 12.9137 20.275ZM7.9137 16.275H17.9137V5.75H7.9137V16.275ZM7.9137 4.25H17.9137V3.3C17.9137 3.23333 17.8804 3.16667 17.8137 3.1C17.747 3.03333 17.6804 3 17.6137 3H8.2137C8.14703 3 8.08036 3.03333 8.0137 3.1C7.94703 3.16667 7.9137 3.23333 7.9137 3.3V4.25ZM7.9137 17.775V21V20.7V17.775Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="media-screen-viewport-mobile nc-screen-tablet">
+                                    <svg width="30" height="31" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_1146_17420" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                                        <rect x="0.913696" width="24" height="24" fill="#D9D9D9"/>
+                                        </mask>
+                                        <g mask="url(#mask0_1146_17420)">
+                                        <path d="M12.9137 20.275C13.1637 20.275 13.372 20.1873 13.5387 20.012C13.7054 19.8373 13.7887 19.625 13.7887 19.375C13.7887 19.1417 13.7054 18.9373 13.5387 18.762C13.372 18.5873 13.1637 18.5 12.9137 18.5C12.6637 18.5 12.4554 18.5873 12.2887 18.762C12.122 18.9373 12.0387 19.1417 12.0387 19.375C12.0387 19.625 12.122 19.8373 12.2887 20.012C12.4554 20.1873 12.6637 20.275 12.9137 20.275ZM6.2137 22.5C5.7137 22.5 5.2887 22.325 4.9387 21.975C4.5887 21.625 4.4137 21.2 4.4137 20.7V3.3C4.4137 2.8 4.5887 2.375 4.9387 2.025C5.2887 1.675 5.7137 1.5 6.2137 1.5H19.6137C20.1137 1.5 20.5387 1.675 20.8887 2.025C21.2387 2.375 21.4137 2.8 21.4137 3.3V20.7C21.4137 21.2 21.2387 21.625 20.8887 21.975C20.5387 22.325 20.1137 22.5 19.6137 22.5H6.2137ZM5.9137 17.775V20.7C5.9137 20.7833 5.94303 20.8543 6.0017 20.913C6.0597 20.971 6.13036 21 6.2137 21H19.6137C19.697 21 19.768 20.971 19.8267 20.913C19.8847 20.8543 19.9137 20.7833 19.9137 20.7V17.775H5.9137ZM5.9137 16.275H19.9137V5.75H5.9137V16.275ZM5.9137 4.25H19.9137V3.3C19.9137 3.21667 19.8847 3.14567 19.8267 3.087C19.768 3.029 19.697 3 19.6137 3H6.2137C6.13036 3 6.0597 3.029 6.0017 3.087C5.94303 3.14567 5.9137 3.21667 5.9137 3.3V4.25ZM5.9137 17.775V21V20.7V17.775Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="media-screen-viewport-mobile nc-screen-desktop">
+                                    <svg width="30" height="31" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_1238_17417" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                                        <rect x="0.913696" width="24" height="24" fill="#D9D9D9"/>
+                                        </mask>
+                                        <g mask="url(#mask0_1238_17417)">
+                                        <path d="M9.4137 20.5V19H11.4137V17H5.2137C4.7137 17 4.2887 16.825 3.9387 16.475C3.5887 16.125 3.4137 15.7 3.4137 15.2V5.3C3.4137 4.8 3.5887 4.375 3.9387 4.025C4.2887 3.675 4.7137 3.5 5.2137 3.5H20.6137C21.1137 3.5 21.5387 3.675 21.8887 4.025C22.2387 4.375 22.4137 4.8 22.4137 5.3V15.2C22.4137 15.7 22.2387 16.125 21.8887 16.475C21.5387 16.825 21.1137 17 20.6137 17H14.4137V19H16.4137V20.5H9.4137ZM5.2137 15.5H20.6137C20.6804 15.5 20.747 15.4667 20.8137 15.4C20.8804 15.3333 20.9137 15.2667 20.9137 15.2V5.3C20.9137 5.23333 20.8804 5.16667 20.8137 5.1C20.747 5.03333 20.6804 5 20.6137 5H5.2137C5.14703 5 5.08036 5.03333 5.0137 5.1C4.94703 5.16667 4.9137 5.23333 4.9137 5.3V15.2C4.9137 15.2667 4.94703 15.3333 5.0137 15.4C5.08036 15.4667 5.14703 15.5 5.2137 15.5Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                        
+                                </div>
+                            </div>
+                            <div class="screen__setting">
+                                <div class="viewWindowSize">
+                                    <span class="screen__window-setting-val">320 px</span>
+                                </div>
+                            </div>
+                            <div class="screen-scale-zoom">
+                                <div class="screen-scale-zoom-container">
+                                    <div class="zoom-button">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0_1146_17428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                                            <rect x="0.913696" width="24" height="24" fill="#D9D9D9"/>
+                                            </mask>
+                                            <g mask="url(#mask0_1146_17428)">
+                                            <path d="M17.9138 18.0251L14.1637 14.3C13.6637 14.7167 13.0887 15.0417 12.4387 15.275C11.7887 15.5083 11.122 15.625 10.4387 15.625C8.72202 15.625 7.27202 15.0333 6.08869 13.85C4.90536 12.6667 4.31369 11.2167 4.31369 9.5C4.31369 7.8 4.90536 6.354 6.08869 5.162C7.27202 3.97067 8.72202 3.375 10.4387 3.375C12.1387 3.375 13.5804 3.96667 14.7637 5.15C15.947 6.33333 16.5387 7.78333 16.5387 9.5C16.5387 10.2167 16.422 10.9 16.1887 11.55C15.9554 12.2 15.6387 12.7667 15.2387 13.25L18.9638 16.9751L17.9138 18.0251ZM10.4387 14.125C11.722 14.125 12.8097 13.675 13.7017 12.775C14.593 11.875 15.0387 10.7833 15.0387 9.5C15.0387 8.21667 14.593 7.125 13.7017 6.225C12.8097 5.325 11.722 4.875 10.4387 4.875C9.13869 4.875 8.04302 5.325 7.15169 6.225C6.25969 7.125 5.81369 8.21667 5.81369 9.5C5.81369 10.7833 6.25969 11.875 7.15169 12.775C8.04302 13.675 9.13869 14.125 10.4387 14.125ZM9.68869 12.2V10.25H7.73869V8.75H9.68869V6.8H11.1887V8.75H13.1137V10.25H11.1887V12.2H9.68869Z" fill="white"/>
+                                            </g>
+                                        </svg>
+                                        <span class="zoom-percentage">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topBar-main-group topBar-group-right">
+                        <div class="topBar-group-right-container">
+                            <div class="design-history-buttons">
+                                <div class="nc-history-button button-back">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_1146_17435" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                                        <rect width="24" height="24" transform="matrix(-1 0 0 1 24.9137 0)" fill="#D9D9D9"/>
+                                        </mask>
+                                        <g mask="url(#mask0_1146_17435)">
+                                        <path d="M14.9637 18.7496C16.497 18.7496 17.822 18.2496 18.9387 17.2496C20.0554 16.2496 20.6137 14.9996 20.6137 13.4996C20.6137 11.9996 20.0554 10.7496 18.9387 9.74961C17.822 8.74961 16.497 8.24961 14.9637 8.24961H8.06371L10.9137 5.39961L9.86371 4.34961L5.21371 8.99961L9.86371 13.6496L10.9137 12.5996L8.06371 9.74961H14.9637C16.0804 9.74961 17.051 10.1036 17.8757 10.8116C18.701 11.5203 19.1137 12.4163 19.1137 13.4996C19.1137 14.5829 18.701 15.4789 17.8757 16.1876C17.051 16.8956 16.0804 17.2496 14.9637 17.2496H8.11371V18.7496H14.9637Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="nc-history-button button-forward">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_1146_17438" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                                        <rect x="0.913696" width="24" height="24" fill="#D9D9D9"/>
+                                        </mask>
+                                        <g mask="url(#mask0_1146_17438)">
+                                        <path d="M10.8637 18.7496C9.33035 18.7496 8.00535 18.2496 6.88868 17.2496C5.77202 16.2496 5.21368 14.9996 5.21368 13.4996C5.21368 11.9996 5.77202 10.7496 6.88868 9.74961C8.00535 8.74961 9.33035 8.24961 10.8637 8.24961H17.7637L14.9137 5.39961L15.9637 4.34961L20.6137 8.99961L15.9637 13.6496L14.9137 12.5996L17.7637 9.74961H10.8637C9.74702 9.74961 8.77635 10.1036 7.95168 10.8116C7.12635 11.5203 6.71368 12.4163 6.71368 13.4996C6.71368 14.5829 7.12635 15.4789 7.95168 16.1876C8.77635 16.8956 9.74702 17.2496 10.8637 17.2496H17.7137V18.7496H10.8637Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="design-collab-online-list">
+                                <div class="design-collab-container">
+                                    <div class="collab-online-user">
+                                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect x="1.1637" y="1.25" width="41.5" height="41.5" rx="20.75" fill="url(#pattern0)"/>
+                                            <rect x="1.1637" y="1.25" width="41.5" height="41.5" rx="20.75" stroke="white" stroke-width="1.5"/>
+                                            <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1238_17439" transform="scale(0.0015625)"/>
+                                            </pattern>
+                                        </defs>
+                                        </svg>                                       
+                                    </div>
+                                    <div class="collab-online-user">
+                                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect x="1.1637" y="1.25" width="41.5" height="41.5" rx="20.75" fill="url(#pattern0)"/>
+                                            <rect x="1.1637" y="1.25" width="41.5" height="41.5" rx="20.75" stroke="white" stroke-width="1.5"/>
+                                            <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1238_17439" transform="scale(0.0015625)"/>
+                                            </pattern>
+                                        </defs>
+                                        </svg>          
+                                    </div>
+                                    <div class="collab-online-user">
+                                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect x="1.1637" y="1.25" width="41.5" height="41.5" rx="20.75" fill="url(#pattern0)"/>
+                                            <rect x="1.1637" y="1.25" width="41.5" height="41.5" rx="20.75" stroke="white" stroke-width="1.5"/>
+                                            <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1238_17439" transform="scale(0.0015625)"/>
+                                            </pattern>
+                                        </defs>
+                                        </svg>                                   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="design-share-link">
+                                <svg width="32" height="30" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.6637 27.75C22.897 27.75 22.247 27.4833 21.7137 26.95C21.1804 26.4167 20.9137 25.7667 20.9137 25C20.9137 24.8833 20.922 24.754 20.9387 24.612C20.9554 24.4707 20.9887 24.35 21.0387 24.25L13.6387 19.9C13.372 20.1667 13.072 20.375 12.7387 20.525C12.4054 20.675 12.047 20.75 11.6637 20.75C10.897 20.75 10.247 20.4833 9.7137 19.95C9.18036 19.4167 8.9137 18.7667 8.9137 18C8.9137 17.2333 9.18036 16.5833 9.7137 16.05C10.247 15.5167 10.897 15.25 11.6637 15.25C12.047 15.25 12.4054 15.325 12.7387 15.475C13.072 15.625 13.372 15.8333 13.6387 16.1L21.0387 11.75C20.9887 11.65 20.9554 11.529 20.9387 11.387C20.922 11.2457 20.9137 11.1167 20.9137 11C20.9137 10.2333 21.1804 9.58333 21.7137 9.05C22.247 8.51667 22.897 8.25 23.6637 8.25C24.4304 8.25 25.0804 8.51667 25.6137 9.05C26.147 9.58333 26.4137 10.2333 26.4137 11C26.4137 11.7667 26.147 12.4167 25.6137 12.95C25.0804 13.4833 24.4304 13.75 23.6637 13.75C23.2804 13.75 22.922 13.675 22.5887 13.525C22.2554 13.375 21.9554 13.1667 21.6887 12.9L14.2887 17.25C14.3387 17.35 14.372 17.4667 14.3887 17.6C14.4054 17.7333 14.4137 17.8667 14.4137 18C14.4137 18.1167 14.4054 18.2457 14.3887 18.387C14.372 18.529 14.3387 18.65 14.2887 18.75L21.6887 23.1C21.9554 22.8333 22.2554 22.625 22.5887 22.475C22.922 22.325 23.2804 22.25 23.6637 22.25C24.4304 22.25 25.0804 22.5167 25.6137 23.05C26.147 23.5833 26.4137 24.2333 26.4137 25C26.4137 25.7667 26.147 26.4167 25.6137 26.95C25.0804 27.4833 24.4304 27.75 23.6637 27.75ZM23.6637 12.25C24.0137 12.25 24.3097 12.129 24.5517 11.887C24.793 11.6457 24.9137 11.35 24.9137 11C24.9137 10.65 24.793 10.354 24.5517 10.112C24.3097 9.87067 24.0137 9.75 23.6637 9.75C23.3137 9.75 23.018 9.87067 22.7767 10.112C22.5347 10.354 22.4137 10.65 22.4137 11C22.4137 11.35 22.5347 11.6457 22.7767 11.887C23.018 12.129 23.3137 12.25 23.6637 12.25ZM11.6637 19.25C12.0137 19.25 12.3097 19.129 12.5517 18.887C12.793 18.6457 12.9137 18.35 12.9137 18C12.9137 17.65 12.793 17.3543 12.5517 17.113C12.3097 16.871 12.0137 16.75 11.6637 16.75C11.3137 16.75 11.018 16.871 10.7767 17.113C10.5347 17.3543 10.4137 17.65 10.4137 18C10.4137 18.35 10.5347 18.6457 10.7767 18.887C11.018 19.129 11.3137 19.25 11.6637 19.25ZM23.6637 26.25C24.0137 26.25 24.3097 26.129 24.5517 25.887C24.793 25.6457 24.9137 25.35 24.9137 25C24.9137 24.65 24.793 24.3543 24.5517 24.113C24.3097 23.871 24.0137 23.75 23.6637 23.75C23.3137 23.75 23.018 23.871 22.7767 24.113C22.5347 24.3543 22.4137 24.65 22.4137 25C22.4137 25.35 22.5347 25.6457 22.7767 25.887C23.018 26.129 23.3137 26.25 23.6637 26.25Z" fill="white"/>
+                                </svg>  
+                            </div>
+                            <div class="design-preview-mode">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_1146_17458" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                                    <rect x="0.913696" width="24" height="24" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_1146_17458)">
+                                    <path d="M9.4137 18.1004V5.90039L18.9887 12.0004L9.4137 18.1004ZM10.9137 15.3504L16.1887 12.0004L10.9137 8.65039V15.3504Z" fill="white"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="design-site-publish">
+                                <div class="design-site-publish">
+                                    <div class="design-publish-site-button">
+                                        <span>Publish</span>
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.4137 7.5L10.4137 12.5L15.4137 7.5" stroke="#158B8D" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div id="td-main-sidebar-left" class="nc-sidebar sidebar-left"></div> -->
+            <!-- <div id="sidebar-right" class="sidebar-right">
+                <div class="sidebar-right_wrapper">
+                    <div class="sidebar__tabs">
+                        <div class="tab styles-tab active " data-auto-id="sidebar-right-style-link"><span label="Styles"><i>&backprime;</i> Styles </span></div>
+                        <div class="tab styles-setting " data-auto-id="sidebar-right-setting-link"><span label="Styles"><i>&amp;</i> Setting </span></div>
+                        <div class="tab styles-animation " data-auto-id="sidebar-right-animation-link"><span label="Styles"><i>&amacr;</i> Animation </span></div>
+                    </div>
+                    <div class="sidebar__tabs-inner">
+                        <div class="sidebar__tab-pane">
+                            <div class="sidebar__tab-heading">
+                            </div>
+                            <div style="position: relative; overflow: hidden; height: 100%;">
+                                <div id="sidebar__tab-style-props" style="transform: translate3d(0px, 0px, 0px);">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="nc-overlay-notificationList">
+                <div class="nc-notification-layer-container">
+
+                </div>
+            </div>
+            <div id="td-overlay-panel-layer-left" class="nc-overlay-panel-layer-left">
+               
+            </div>  -->
+        <!-- </div> -->
+        <!-- <div id="td-root"></div> -->
+        <div id="editor-react-mount"></div>
+            
+    </div>
+
+    <div id="td-root"></div>
+</body>
+<script src='js/main.js' defer></script>
+<script src='js/component/index.js'></script>
+<script src='js/factory/stylesheet.js'></script>
+<script src='js/component/treeWalker.js'></script>
+<script src='js/interact.js'></script>
+</html>

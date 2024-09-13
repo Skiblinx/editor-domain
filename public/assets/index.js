@@ -1,0 +1,6 @@
+export { default as spinner } from './spinner.gif'
+export { default as preloader } from './preLoaderSpinner.gif'
+export { default as editorBg } from './editorBg.png'
+export { default as mobileImg } from './phone.png'
+export { default as pointer } from './pointer.png'
+export { default as desktopImg } from './desktop.png'
